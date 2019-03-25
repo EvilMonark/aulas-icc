@@ -1,6 +1,6 @@
 // Trabalho01.cpp : Este arquivo contém a função 'main'. A execução do programa começa e termina ali.
 //
-
+#include <math.h>
 #include <iostream>
 #ifndef PRINT
 #define PRINT std::cout<<
@@ -29,7 +29,7 @@ int main()
 {
 	//Pegar inteiros Centavos
 	PRINT "Centavos: ";
-	double centavos = getNum();
+	unsigned long int centavos = getNum();
 	//Ler quantos reais e centavos e mostrar quantas notas e moedas serao necessarias
 	//notas
 	int reais100 = 10000;
