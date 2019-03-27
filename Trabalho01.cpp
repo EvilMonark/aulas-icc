@@ -1,7 +1,6 @@
 // Trabalho01.cpp : Este arquivo contém a função 'main'. A execução do programa começa e termina ali.
 //
-
-#include "pch.h"
+#include <math.h>
 #include <iostream>
 #ifndef PRINT
 #define PRINT std::cout<<
@@ -30,7 +29,7 @@ int main()
 {
 	//Pegar inteiros Centavos
 	PRINT "Centavos: ";
-	double centavos = getNum();
+	unsigned long int centavos = getNum();
 	//Ler quantos reais e centavos e mostrar quantas notas e moedas serao necessarias
 	//notas
 	int reais100 = 10000;
@@ -47,7 +46,7 @@ int main()
 	//Quantidades de notas e moedas
 	//notas
 	int num100 = floor(centavos / reais100);//nota de 100
-	centavos -= num100 * reais100;
+	centavos -= num100 * reais100;//o valor inserido - numero de notas * nota representada = novo valor, sendo esse novo valor impossivel de dividir pela nota representada e deve ser analisada uma nota de menor valor  
 
 	int num50 = floor(centavos / reais50);//nota de 50
 	centavos -= num50 * reais50 ;
