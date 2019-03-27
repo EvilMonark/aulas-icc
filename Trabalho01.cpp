@@ -9,10 +9,7 @@
 #ifndef GET
 #define GET std::cin>>
 #endif // !GET
-
-
-
-
+//getNum(): analiza o numero inserido pelo usuario
 int getNum() {
 	int num;
 	GET num;
